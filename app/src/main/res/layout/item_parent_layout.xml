@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="parentItem"
+            type="com.herdsman.codingexercise.MainActivity.ParentItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:padding="15dp"
+            android:text="@{`List ID: `+parentItem.listId + `, Count: ` + parentItem.childCount()}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
