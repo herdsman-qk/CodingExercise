@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CodingExercise</string>
+    <string name="network_error">Network Error</string>
+</resources>
